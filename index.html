@@ -28,6 +28,7 @@
     .hero { position: relative; z-index: 1; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 120px 24px 100px; overflow: hidden; }
     .hero-glow { position: absolute; top: 30%; left: 50%; transform: translate(-50%,-50%); width: 700px; height: 700px; background: radial-gradient(circle, rgba(0,255,65,0.07) 0%, transparent 68%); pointer-events: none; animation: pulseGlow 4s ease-in-out infinite; }
     @keyframes pulseGlow { 0%,100%{opacity:0.8;transform:translate(-50%,-50%) scale(1)} 50%{opacity:1;transform:translate(-50%,-50%) scale(1.08)} }
+    .hero-photo { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 2px solid #00FF41; box-shadow: 0 0 24px rgba(0,255,65,0.25); margin-bottom: 28px; opacity: 0; animation: fadeUp 0.8s ease forwards 0.1s; }
     .hero-eyebrow { font-family: var(--mono); font-size: 12px; font-weight: 400; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 28px; opacity: 0; animation: fadeUp 0.8s ease forwards 0.3s; }
     .hero h1 { font-size: clamp(44px,8vw,92px); font-weight: 900; letter-spacing: -0.04em; line-height: 1.0; color: var(--text-primary); margin-bottom: 24px; opacity: 0; animation: fadeUp 0.8s ease forwards 0.5s; }
     .hero h1 .green { color: var(--accent); text-shadow: 0 0 40px rgba(0,255,65,0.4); }
@@ -124,6 +125,7 @@
 </nav>
 <section class="hero">
   <div class="hero-glow"></div>
+  <img src="cameron.png" alt="Cameron Hall" class="hero-photo" />
   <p class="hero-eyebrow">// AI Builder · Fraud Analyst · Baldwin Hills, CA</p>
   <h1>I don't wait for<br>tools to exist.<br><span class="green">I build them.</span></h1>
   <p class="hero-subtitle">Six years of working fraud cases taught me exactly what to build. Now I build it.</p>
